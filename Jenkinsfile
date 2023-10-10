@@ -14,7 +14,7 @@ pipeline {
                 script {
                     
                     // Build the Docker image using the Dockerfile in the repository
-                    sh 'docker build -t ravi0396/thirdimage .'
+                    sh 'docker build -t ravi0396/fourthimage .'
                 }
             }
         }
@@ -27,7 +27,7 @@ pipeline {
                          sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
 
                         // Push the Docker image to Docker Hub
-                        sh 'docker push ravi0396/thirdimage'
+                        sh 'docker push ravi0396/fourthimage'
                     }
                 }
             }
