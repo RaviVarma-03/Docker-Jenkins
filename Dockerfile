@@ -1,12 +1,12 @@
 FROM node:20-alpine
 
-WORKDIR /ravi/app/
+WORKDIR /varma/app/
 
 COPY package.json .
-COPY ravi.js .
+COPY varma.js .
 
 RUN npm install
 
 EXPOSE 3000
 
-ENTRYPOINT ["node", "ravi.js"]
+ENTRYPOINT ["node", "varma.js"]
